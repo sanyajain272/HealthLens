@@ -14,7 +14,7 @@ app.secret_key = "mediguide_secret_key"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-training = pd.read_csv(os.path.join(BASE_DIR, "Data/Training.csv"))
+training = pd.read_csv(os.path.join(BASE_DIR, "Data/Symptom_severity.csv"))
 
 X = training.iloc[:, :-1]
 y = training.iloc[:, -1]
